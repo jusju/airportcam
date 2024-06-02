@@ -18,21 +18,7 @@ void getBuffer()                                                                
     if (Serial.available() > 0) {
       databuffer[index] = Serial.read();
         //Serial.println(databuffer[index]);
-      /*
-      if(databuffer[index] == 'W') {
-        Serial.println(databuffer[index]);
-        
-        Serial.println(databuffer[index+1]);
-        Serial.println(databuffer[index+2]);
-        Serial.println(databuffer[index+3]);
-        Serial.println(databuffer[index+4]);
-        Serial.println(databuffer[index+5]);
-        Serial.println(databuffer[index+6]);
-        Serial.println(databuffer[index+7]);
-        Serial.println(databuffer[index+8]);
-        index = index + 8;
-      }
-      */
+
       if (databuffer[0] != 'c') {
         index = -1;
       }
