@@ -106,15 +106,16 @@ void setup()
 void loop()
 {
   getBuffer();                                                                      //Begin!
-  Serial.print("Wind Direction: ");
+  Serial.print("{");
+  Serial.print("WindDirection: ");
   Serial.print(WindDirection());
-  Serial.println("  ");
-  Serial.print("Average Wind Speed (One Minute): ");
+  Serial.println("  ,");
+  Serial.print("AverageWindSpeedOneMinuteMeterPerSecond: ");
   Serial.print(WindSpeedAverage());
-  Serial.println("m/s  ");
-  Serial.print("Max Wind Speed (Five Minutes): ");
+  Serial.println("  ,");
+  Serial.print("MaxWindSpeedFiveMinutesMeterPerSecond: ");
   Serial.print(WindSpeedMax());
-  Serial.println("m/s");
+  Serial.println("  ,");
   Serial.print("Rain Fall (One Hour): ");
   Serial.print(RainfallOneHour());
   Serial.println("mm  ");
